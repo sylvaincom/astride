@@ -7,17 +7,6 @@ ASTRIDE: Adaptive Symbolization for Time Series Databases
 available on [arXiv](https://arxiv.org/abs/2302.04097).
 All the code is written in Python (scripts and notebooks).
 
-How to cite this paper / code?
-```
-@misc{2023_combettes_astride,
-    doi = {10.48550/ARXIV.2302.04097},
-    url = {https://arxiv.org/abs/2302.04097},
-    author = {Combettes, Sylvain W. and Truong, Charles and Oudre, Laurent},
-    title = {ASTRIDE: Adaptive Symbolization for Time Series Databases},
-    publisher = {arXiv},
-    year = {2023},
-}
-```
 <details><summary><i>Toggle for the paper's abstract!</i></summary>We introduce ASTRIDE (Adaptive Symbolization for Time seRIes DatabasEs), a novel symbolic representation of time series, along with its accelerated variant FASTRIDE (Fast ASTRIDE). Unlike most symbolization procedures, ASTRIDE is adaptive during both the segmentation step by performing change-point detection and the quantization step by using quantiles. Instead of proceeding signal by signal, ASTRIDE builds a dictionary of symbols that is common to all signals in a data set. We also introduce D-GED (Dynamic General Edit Distance), a novel similarity measure on symbolic representations based on the general edit distance. We demonstrate the performance of the ASTRIDE and FASTRIDE representations compared to SAX (Symbolic Aggregate approXimation), 1d-SAX, SFA (Symbolic Fourier Approximation), and ABBA (Adaptive Brownian Bridge-based Aggregation) on reconstruction and, when applicable, on classification tasks. These algorithms are evaluated on 86 univariate equal-size data sets from the UCR Time Series Classification Archive. An open source GitHub repository called astride is made available to reproduce all the experiments in Python.</details></br>
 
 Please let us know of any issue you might encounter when using this code, either by opening an issue on this repository or by sending an email to `sylvain.combettes [at] ens-paris-saclay.fr`. Or if you just need some clarification or help.
@@ -129,6 +118,36 @@ _Note that more details are given at the top of each notebook and that the code 
 - tslearn==0.5.2
 - weighted-levenshtein==0.2.1
 
+## Citing
+
+If you use this code or publication, please cite (arXiv: https://arxiv.org/abs/2302.04097):
+```bibtex
+@article{2023_combettes_astride,
+    doi = {10.48550/ARXIV.2302.04097},
+    url = {https://arxiv.org/abs/2302.04097},
+    author = {Combettes, Sylvain W. and Truong, Charles and Oudre, Laurent},
+    title = {ASTRIDE: Adaptive Symbolization for Time Series Databases},
+    journal = {arXiv preprint arXiv:2302.04097},
+    year = {2023},
+}
+```
+
 ## Licence
 
 This project is licensed under the MIT License, see the `LICENSE.md` file for more information.
+
+## Contributors
+
+* [Sylvain W. Combettes](https://sylvaincom.github.io/) (Centre Borelli, ENS Paris-Saclay)
+* [Charles Truong](https://charles.doffy.net/) (Centre Borelli, ENS Paris-Saclay)
+* [Laurent Oudre](http://www.laurentoudre.fr/) (Centre Borelli, ENS Paris-Saclay)
+
+## Acknowledgments
+
+Sylvain W. Combettes is supported by the IDAML chair (ENS Paris-Saclay) and UDOPIA (ANR-20-THIA-0013-01).
+Charles Truong is funded by the PhLAMES chair (ENS Paris-Saclay).
+Part of the computations has been executed on Atos Edge computer, funded by the IDAML chair (ENS Paris-Saclay).
+
+<p align="center">
+<img width="700" src="https://github.com/boniolp/dsymb-playground/blob/main/figures/cebo_logos.png"/>
+</p>
