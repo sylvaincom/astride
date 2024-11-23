@@ -1,15 +1,17 @@
 # ASTRIDE: Adaptive Symbolization for Time Series Databases
 
-This repository contains the code to reproduce all experiments in our paper
-```
-ASTRIDE: Adaptive Symbolization for Time Series Databases
-```
+This repository contains the code to reproduce all experiments in our preprint paper
+>ASTRIDE: Adaptive Symbolization for Time Series Databases
 available on [arXiv](https://arxiv.org/abs/2302.04097).
+
 All the code is written in Python (scripts and notebooks).
+
+Note that the ASTRIDE method has been accepted at [EUSIPCO 2024](https://ieeexplore.ieee.org/document/10715214):
+> S. W. Combettes, C. Truong, and L. Oudre. "Symbolic representation for time series." In _Proceedings of the European Signal Processing Conference (EUSIPCO)_, Lyon, France, 2024.
 
 <details><summary><i>Toggle for the paper's abstract!</i></summary>We introduce ASTRIDE (Adaptive Symbolization for Time seRIes DatabasEs), a novel symbolic representation of time series, along with its accelerated variant FASTRIDE (Fast ASTRIDE). Unlike most symbolization procedures, ASTRIDE is adaptive during both the segmentation step by performing change-point detection and the quantization step by using quantiles. Instead of proceeding signal by signal, ASTRIDE builds a dictionary of symbols that is common to all signals in a data set. We also introduce D-GED (Dynamic General Edit Distance), a novel similarity measure on symbolic representations based on the general edit distance. We demonstrate the performance of the ASTRIDE and FASTRIDE representations compared to SAX (Symbolic Aggregate approXimation), 1d-SAX, SFA (Symbolic Fourier Approximation), and ABBA (Adaptive Brownian Bridge-based Aggregation) on reconstruction and, when applicable, on classification tasks. These algorithms are evaluated on 86 univariate equal-size data sets from the UCR Time Series Classification Archive. An open source GitHub repository called astride is made available to reproduce all the experiments in Python.</details></br>
 
-Please let us know of any issue you might encounter when using this code, either by opening an issue on this repository or by sending an email to `sylvain.combettes [at] ens-paris-saclay.fr`. Or if you just need some clarification or help.
+Please let us know of any issue you might encounter when using this code, either by opening an issue on this repository or by sending an email to `sylvain.combettes8 [at] gmail.com`. Or if you just need some clarification or help.
 
 ## How is a symbolic representation implemented?
 
@@ -130,6 +132,16 @@ If you use this code or publication, please cite (arXiv: https://arxiv.org/abs/2
     journal = {arXiv preprint arXiv:2302.04097},
     year = {2023},
 }
+```
+
+```bibtex
+@INPROCEEDINGS{10715214,
+  author={Combettes, Sylvain W. and Truong, Charles and Oudre, Laurent},
+  booktitle={2024 32nd European Signal Processing Conference (EUSIPCO)}, 
+  title={Symbolic Representation for Time Series}, 
+  year={2024},
+  pages={1962-1966},
+  doi={10.23919/EUSIPCO63174.2024.10715214}}
 ```
 
 ## Licence
